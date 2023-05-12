@@ -8,7 +8,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts",
-		"lint": "tsc --noEmit"
+		"lint": "tsc"
 	},
 	"bin": {
 		"weltall": "./dist/index.js"
@@ -22,7 +22,10 @@
 		"generator"
 	],
 	"author": "Michael Showes",
-	"repository": "https://github.com/michaelshowes/weltall",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/michaelshowes/weltall.git"
+	},
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "^5.2.0",
