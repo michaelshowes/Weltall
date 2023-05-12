@@ -2,7 +2,9 @@
 	"name": "@michaelshowes/weltall",
 	"version": "1.0.3",
 	"description": "A CLI for generating React components in Next.js 13 (App Router)",
-	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
