@@ -2,14 +2,13 @@
 	"name": "weltall",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.ts",
+	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
-		"start": "ts-node src/index.ts",
 		"build": "npx tsc"
 	},
 	"bin": {
-		"weltall": "./index.js"
+		"weltall": "./dist/index.js"
 	},
 	"keywords": [],
 	"author": "",

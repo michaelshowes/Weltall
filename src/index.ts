@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program } from 'commander';
 import { initProject, generateComponent } from './commands/index.js';
 import figlet from 'figlet';
