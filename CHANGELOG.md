@@ -1,5 +1,11 @@
 # @michaelshowes/weltall
 
+## 1.0.4
+
+### Patch Changes
+
+- a5941d4: Made page folders camelCase vs PascalCase
+
 ## 1.0.3
 
 ### Patch Changes
