@@ -1,7 +1,7 @@
 {
-	"name": "weltall",
+	"name": "@michaelshowes/weltall",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A CLI for generating React components in Next.js 13 (App Router)",
 	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
@@ -10,20 +10,27 @@
 	"bin": {
 		"weltall": "./dist/index.js"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"cli",
+		"react",
+		"next.js",
+		"typescript",
+		"component",
+		"generator"
+	],
+	"author": "Michael Showes",
+	"repository": "https://github.com/michaelshowes/weltall",
 	"license": "ISC",
 	"dependencies": {
-		"@types/figlet": "^1.5.6",
-		"@types/fs-extra": "^11.0.1",
-		"@types/inquirer": "^9.0.3",
 		"chalk": "^5.2.0",
 		"commander": "^10.0.1",
 		"figlet": "^1.6.0",
-		"fs-extra": "^11.1.1",
-		"inquirer": "^9.2.2"
+		"fs-extra": "^11.1.1"
 	},
 	"devDependencies": {
+		"@types/figlet": "^1.5.6",
+		"@types/fs-extra": "^11.0.1",
+		"@types/inquirer": "^9.0.3",
 		"@types/node": "^18.16.3",
 		"ts-node": "^10.9.1",
 		"typescript": "^5.0.4"
