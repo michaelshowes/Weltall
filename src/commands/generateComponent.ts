@@ -11,7 +11,9 @@ export function generateComponent(type: string, input: string) {
 	const BASE_DIR = pageType
 		? `${rootDir}/src/app`
 		: `${rootDir}/src/components`;
-	const componentDirectory = `${BASE_DIR}/${name}/`;
+	const componentDirectory = pageType
+		? `${BASE_DIR}/${toCamelCase(name)}`
+		: `${BASE_DIR}/${name}`;
 
 	// throw an error if no component name is specified
 	if (!name) {
@@ -44,7 +46,11 @@ export function generateComponent(type: string, input: string) {
 				writeFileErrorHandler
 			);
 
-			console.log(`${chalk.green('page.tsx')} was created in src/app/${name}/`);
+			console.log(
+				`${chalk.green('page.tsx')} was created in src/app/${toCamelCase(
+					name
+				)}/`
+			);
 		} else {
 			writeFile(`${componentDirectory}/${name}.tsx`, component(name)).catch(
 				writeFileErrorHandler
