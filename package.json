@@ -8,7 +8,9 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsup src/index.ts --format cjs,esm --dts",
-		"lint": "tsc"
+		"lint": "tsc",
+		"ci": "yarn lint && yarn build",
+		"release": "yarn lint && yarn build && changeset publish"
 	},
 	"bin": {
 		"weltall": "./dist/index.js"
