@@ -1,6 +1,6 @@
 {
 	"name": "@mshowes/weltall",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "A CLI for generating React components in Next.js 13 (App Router)",
 	"publishConfig": {
 		"access": "public"
