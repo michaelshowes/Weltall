@@ -1,5 +1,12 @@
 # @michaelshowes/weltall
 
+## 1.1.0
+
+### Minor Changes
+
+- f8aa193: Removed ability to generate page. Creating a page is way too simple for it to be relegated to a script.
+- 9d35ad5: Removed ability to generate pages. Pages are too easy to create to be relegated to a script.
+
 ## 1.0.4
 
 ### Patch Changes
