@@ -1,12 +1,11 @@
-import { toCamelCase, toPascalCase } from '../utils/index.js';
-import { component, page, scss } from '../templates/index.js';
+import { toCamelCase } from '../utils/index.js';
+import { component, scss } from '../templates/index.js';
 import { mkdir, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import chalk from 'chalk';
 
-export function generateComponent(input: string) {
+export function generateComponent(name: string) {
 	const rootDir = process.cwd();
-	const name = toPascalCase(input);
 	const BASE_DIR = `${rootDir}/src/components`;
 	const componentDirectory = `${BASE_DIR}/${name}`;
 
