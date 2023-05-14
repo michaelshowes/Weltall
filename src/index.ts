@@ -9,7 +9,7 @@ program
 	.description(
 		'A CLI for generating React components in Next.js 13 (App Router)'
 	)
-	.version('0.0.1')
+	.version('1.1')
 	.action(() => {
 		console.log(figlet.textSync('Weltall CLI'));
 	});
@@ -29,11 +29,8 @@ program
 	.command('generate <name>')
 	.alias('g')
 	.description('Generate a new component')
-	.option('-c, --component', 'Generate a component (default)')
-	.option('-p, --page', 'Generate a page component')
-	.action((name: string, options) => {
-		const type = options.page ? 'page' : 'component';
-		generateComponent(type, name);
+	.action((name: string) => {
+		generateComponent(name);
 	})
 	.showHelpAfterError();
 

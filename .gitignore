@@ -3,4 +3,7 @@
 /dist
 
 # TypeScript cache
-*.tsbuildinfo\
+*.tsbuildinfo
+
+# Misc
+.DS_Store
