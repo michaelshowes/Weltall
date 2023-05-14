@@ -1,5 +1,11 @@
 # @michaelshowes/weltall
 
+## 1.1.1
+
+### Patch Changes
+
+- 3a7a7d2: removed PascalCase helper function
+
 ## 1.1.0
 
 ### Minor Changes
